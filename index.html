@@ -1,1 +1,782 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><meta http-equiv="X-UA-Compatible"content="ie=edge"><title>永久发布站</title><meta name="keywords"content=""><meta name="description"content=""><link rel="shortcut icon"href="favicon.ico"><style>*{margin:0;padding:0}body,html{margin:0;font-family:"&#24494;&#36719;&#38597;&#40657;","Microsoft YaHei","Microsoft YaHei UI","Segoe UI",Arial,Verdana,Sans-Serif,sans-serif;overflow:hidden;box-sizing:border-box;height:100%;width:100%}body{background:#2a2d3e;font-family:'Noto Sans JP',sans-serif;font-weight:400}canvas{position:absolute}.main{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;text-align:center;width:100%;height:100%;margin:0 auto;position:fixed}.container{align-items:center;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:40px 0;width:1024px}.btn{letter-spacing:.1em;cursor:pointer;font-size:14px;font-weight:400;line-height:45px;position:relative;text-decoration:none;width:100%;margin:10px}.btn:hover{text-decoration:none}.effect01{width:35%;color:#fff;display:flex;justify-content:space-between;padding:0 2em;border:4px solid#2e098a;box-shadow:0 0 0 1px#20075f inset;background-color:#553db1;overflow:hidden;position:relative;transition:all.3s ease-in-out}.effect01:hover{border:4px solid#553db1;background-color:#2e098a;box-shadow:0 0 0 4px#20075f inset}.effect01 span{transition:all.2s ease-out;z-index:2}.effect01:hover span{letter-spacing:.13em}.effect01:after{background:#fff;border:0 solid#000;content:"";height:155px;left:-75px;opacity:.8;position:absolute;top:-50px;-webkit-transform:rotate(35deg);transform:rotate(35deg);width:50px;transition:all 1s cubic-bezier(.075,.82,.165,1);z-index:1}.effect01:hover:after{background:#fff;border:20px solid#000;opacity:0;left:120%;-webkit-transform:rotate(40deg);transform:rotate(40deg)}.btn-group{width:100%;display:flex;justify-content:center;flex-wrap:wrap}.header{display:flex;z-index:1;justify-content:center;margin-bottom:4.4em}.header.logo{margin-left:-2.4em}.header.logo svg{fill:#cbc0f7;height:8em}.header.title{margin-top:-.4em;height:8em;color:#fff}.header.title h1{text-align:center;letter-spacing:.05em;color:#e1ddf3;margin:0;font-size:4.2em;background-image:-webkit-linear-gradient(92deg,#f35626,#feab3a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:hue 60s infinite linear}.header.title p{text-align:center;color:#737373;letter-spacing:.5em;font-size:2em;margin:0 0 2em;background-image:-webkit-linear-gradient(92deg,#df5527,#df9038);-webkit-background-clip:text;-webkit-text-fill-color:transparent;-webkit-animation:hue 60s infinite linear}.point{margin-top:2em;color:#c7c7c7;line-height:24px}.copyright{text-align:center;color:#604b69;z-index:1;margin-top:3em;font-size:.6em}@-webkit-keyframes hue{from{-webkit-filter:hue-rotate(0)}to{-webkit-filter:hue-rotate(-360deg)}}.loading.loading-text{color:#fff;font-size:2em}.loading-text{position:relative}.loading-text::after{content:"";position:absolute;top:0%;bottom:0;margin-left:10px;animation:dot 1s infinite steps(3,start)}.speed-url{color:#acacac;font-style:italic;font-size:12px}.speed-fast.speed-text{color:#11d08a}.speed-check.speed-text{color:#9d9d9d}.speed-fast{}.speed-ord.speed-text{color:#ff8000}.speed-ord.dis_speed--btn{border-color:#bd5f00}.speed-fail.speed-text{color:#f37b88}.speed-fail{border-color:#882d37}.speed-fail.speed-unit{display:none}.speed-timeout.speed-text{color:#f37b88}.speed-timeout{border-color:#882d37}.speed-timeout.speed-unit{display:none}@keyframes dot{33.33%{content:"."}66.67%{content:".."}100%{content:"..."}}@-webkit-keyframes glow{0%{border-color:#393;box-shadow:0 0 5px rgba(0,255,0,.2),inset 0 0 5px rgba(0,255,0,.1),0 2px 0#000}100%{border-color:#6f6;box-shadow:0 0 20px rgba(0,255,0,.6),inset 0 0 10px rgba(0,255,0,.4),0 2px 0#000}}@-moz-keyframes glow{0%{border-color:#393;box-shadow:0 0 5px rgba(0,255,0,.2),inset 0 0 5px rgba(0,255,0,.1),0 2px 0#000}100%{border-color:#6f6;box-shadow:0 0 20px rgba(0,255,0,.6),inset 0 0 10px rgba(0,255,0,.4),0 2px 0#000}}@-o-keyframes glow{0%{border-color:#393;box-shadow:0 0 5px rgba(0,255,0,.2),inset 0 0 5px rgba(0,255,0,.1),0 2px 0#000}100%{border-color:#6f6;box-shadow:0 0 20px rgba(0,255,0,.6),inset 0 0 10px rgba(0,255,0,.4),0 2px 0#000}}@-ms-keyframes glow{0%{border-color:#393;box-shadow:0 0 5px rgba(0,255,0,.2),inset 0 0 5px rgba(0,255,0,.1),0 2px 0#000}100%{border-color:#6f6;box-shadow:0 0 20px rgba(0,255,0,.6),inset 0 0 10px rgba(0,255,0,.4),0 2px 0#000}}@keyframes glow{0%{border-color:#393;box-shadow:0 0 5px rgba(0,255,0,.2),inset 0 0 5px rgba(0,255,0,.1),0 2px 0#000}100%{border-color:#6f6;box-shadow:0 0 20px rgba(0,255,0,.6),inset 0 0 10px rgba(0,255,0,.4),0 2px 0#000}}@media screen and(max-width:768px){.header.title h1{font-size:2.6em}.header.title p{font-size:2.2em}.effect01{width:60%}}@media screen and(max-width:420px){.header.title{width:100%}.header.title h1{font-size:1.6em}.header.title p{font-size:1.2em}.effect01{width:80%}}@media screen and(max-width:992px){}</style><script type="text/javascript">window.config={checkTimeOut:4000,checkFast:1500,checkNormal:2000,template:'<a href="//{{url}}" class="btn effect01 speed-{{speed}}" id="btn-{{id}}" target="_blank"><span>&#32447;&#36335;{{name}}<span class="speed-text">[&#27491;&#22312;&#26816;&#27979;&#20013;...]</span></a>',speed:' &#38142;&#25509;&#27627;&#31186;[{{timer}}<span class="speed-unit">ms</span>]',checkList:["MDhiay5jb20=","dWNkeS50b3A="],};</script></head><body><canvas id="canvas-bottom"></canvas><canvas id="canvas-top"></canvas><div class="main"><div class="container"><div class="header"><div class="title"><h1>小七地址永久发布站</h1><p>Ctrl+D加入收藏</p></div></div><div id="siteDataList"class="btn-group"></div><div class="loading hidden"id="loading"><p class="loading-img"><svg class="lds-default"width="200px"height="200px"xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 100 100"preserveAspectRatio="xMidYMid"style="background: none;"><circle cx="75"cy="50"fill="undefined"r="4.75387"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.642s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.642s"></animate></circle><circle cx="71.651"cy="62.5"fill="undefined"r="4.57184"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.583s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.583s"></animate></circle><circle cx="62.5"cy="71.651"fill="undefined"r="3.90898"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.525s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.525s"></animate></circle><circle cx="50"cy="75"fill="undefined"r="3.24613"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.467s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.467s"></animate></circle><circle cx="37.5"cy="71.651"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.408s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.408s"></animate></circle><circle cx="28.349"cy="62.5"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.35s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.35s"></animate></circle><circle cx="25"cy="50"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.292s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.292s"></animate></circle><circle cx="28.349"cy="37.5"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.233s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.233s"></animate></circle><circle cx="37.5"cy="28.349"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.175s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.175s"></animate></circle><circle cx="50"cy="25"fill="undefined"r="3"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.117s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.117s"></animate></circle><circle cx="62.5"cy="28.349"fill="undefined"r="3.42816"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="-0.058s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="-0.058s"></animate></circle><circle cx="71.651"cy="37.5"fill="undefined"r="4.09102"><animate attributeName="r"values="3;3;5;3;3"times="0;0.1;0.2;0.3;1"dur="0.7s"repeatCount="indefinite"begin="0s"></animate><animate attributeName="fill"values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff"repeatCount="indefinite"times="0;0.1;0.2;0.3;1"dur="0.7s"begin="0s"></animate></circle></svg></p><p class="loading-text">正在加载中</p></div><div class="point"><p>友情提示：本站点为发布站，请使用Ctrl+D加入收藏</p><p>强烈建议收藏本网址防止以后找不到我们失联!</p></div><div class="copyright"><p>Copyright©2022小七永久发布页地址.</p></div></div></div><script>(function(){function Vector(x,y,z){this.x=x||0;this.y=y||0;this.z=z||0}Vector.prototype={negative:function(){return new Vector(-this.x,-this.y,-this.z)},add:function(v){if(v instanceof Vector)return new Vector(this.x+v.x,this.y+v.y,this.z+v.z);else return new Vector(this.x+v,this.y+v,this.z+v)},subtract:function(v){if(v instanceof Vector)return new Vector(this.x-v.x,this.y-v.y,this.z-v.z);else return new Vector(this.x-v,this.y-v,this.z-v)},multiply:function(v){if(v instanceof Vector)return new Vector(this.x*v.x,this.y*v.y,this.z*v.z);else return new Vector(this.x*v,this.y*v,this.z*v)},divide:function(v){if(v instanceof Vector)return new Vector(this.x/v.x,this.y/v.y,this.z/v.z);else return new Vector(this.x/v,this.y/v,this.z/v)},equals:function(v){return this.x==v.x&&this.y==v.y&&this.z==v.z},dot:function(v){return this.x*v.x+this.y*v.y+this.z*v.z},cross:function(v){return new Vector(this.y*v.z-this.z*v.y,this.z*v.x-this.x*v.z,this.x*v.y-this.y*v.x)},length:function(){return Math.sqrt(this.dot(this))},unit:function(){return this.divide(this.length())},min:function(){return Math.min(Math.min(this.x,this.y),this.z)},max:function(){return Math.max(Math.max(this.x,this.y),this.z)},toAngles:function(){return{theta:Math.atan2(this.z,this.x),phi:Math.asin(this.y/this.length())}},angleTo:function(a){return Math.acos(this.dot(a)/(this.length()*a.length()))},toArray:function(n){return[this.x,this.y,this.z].slice(0,n||3)},clone:function(){return new Vector(this.x,this.y,this.z)},init:function(x,y,z){this.x=x;this.y=y;this.z=z;return this},noZ:function(){this.z=0;return this}};Vector.negative=function(a,b){b.x=-a.x;b.y=-a.y;b.z=-a.z;return b};Vector.add=function(a,b,c){if(b instanceof Vector){c.x=a.x+b.x;c.y=a.y+b.y;c.z=a.z+b.z}else{c.x=a.x+b;c.y=a.y+b;c.z=a.z+b}return c};Vector.subtract=function(a,b,c){if(b instanceof Vector){c.x=a.x-b.x;c.y=a.y-b.y;c.z=a.z-b.z}else{c.x=a.x-b;c.y=a.y-b;c.z=a.z-b}return c};Vector.multiply=function(a,b,c){if(b instanceof Vector){c.x=a.x*b.x;c.y=a.y*b.y;c.z=a.z*b.z}else{c.x=a.x*b;c.y=a.y*b;c.z=a.z*b}return c};Vector.divide=function(a,b,c){if(b instanceof Vector){c.x=a.x/b.x;c.y=a.y/b.y;c.z=a.z/b.z}else{c.x=a.x/b;c.y=a.y/b;c.z=a.z/b}return c};Vector.cross=function(a,b,c){c.x=a.y*b.z-a.z*b.y;c.y=a.z*b.x-a.x*b.z;c.z=a.x*b.y-a.y*b.x;return c};Vector.unit=function(a,b){var length=a.length();b.x=a.x/length;b.y=a.y/length;b.z=a.z/length;return b};Vector.fromAngles=function(theta,phi){return new Vector(Math.cos(theta)*Math.cos(phi),Math.sin(phi),Math.sin(theta)*Math.cos(phi))};Vector.randomDirection=function(){return Vector.fromAngles(Math.random()*Math.PI*2,Math.asin(Math.random()*2-1))};Vector.min=function(a,b){return new Vector(Math.min(a.x,b.x),Math.min(a.y,b.y),Math.min(a.z,b.z))};Vector.max=function(a,b){return new Vector(Math.max(a.x,b.x),Math.max(a.y,b.y),Math.max(a.z,b.z))};Vector.lerp=function(a,b,fraction){return b.subtract(a).multiply(fraction).add(a)};Vector.fromArray=function(a){return new Vector(a[0],a[1],a[2])};Vector.angleBetween=function(a,b){return a.angleTo(b)};window.Vector=Vector})();(function(){'use strict';var opts={background:'black',numberOrbs:50,maxVelocity:2.5,orbRadius:1,minProximity:100,initialColorAngle:7,colorFrequency:0.3,colorAngleIncrement:0.009,globalAlpha:0.010,manualWidth:false,manualHeight:false};var canvasTop,linecxt,canvasBottom,cxt,width,height,animationFrame;var orbs;var Orb=(function(){function Orb(radius,color){var posX=randBetween(0,width);var posY=randBetween(0,height);this.position=new Vector(posX,posY);var velS=randBetween(0,opts.maxVelocity);this.velocity=Vector.randomDirection().multiply(velS).noZ();this.radius=radius;this.color=color}Orb.prototype={update:function(){this.position=this.position.add(this.velocity);if(this.position.x+this.radius>=width||this.position.x-this.radius<=0){this.velocity.x=this.velocity.x*-1}if(this.position.y+this.radius>=height||this.position.y-this.radius<=0){this.velocity.y=this.velocity.y*-1}},display:function(){cxt.beginPath();cxt.fillStyle=this.color;cxt.ellipse(this.position.x,this.position.y,this.radius,this.radius,0,0,2*Math.PI,false);cxt.fill();cxt.closePath()},run:function(){this.update();this.display()}};return Orb})();var Orbs=(function(){function Orbs(numberOrbs,radius,initialColorAngle,globalAlpha,colorAngleIncrement,colorFrequency){this.orbs=[];this.colorAngle=initialColorAngle;this.colorAngleIncrement=colorAngleIncrement;this.globalAlpha=globalAlpha;this.colorFrequency=colorFrequency;this.color=null;for(var i=0;i<numberOrbs;i++){this.orbs.push(new Orb(radius,this.color))}}Orbs.prototype={run:function(){this.phaseColor();for(var i=0;i<this.orbs.length;i++){for(var j=i+1;j<this.orbs.length;j++){this.compare(this.orbs[i],this.orbs[j])}this.orbs[i].color=this.color;this.orbs[i].run()}},compare:function(orbA,orbB){var distance=Math.abs(orbA.position.subtract(orbB.position).length());if(distance<=opts.minProximity){linecxt.beginPath();linecxt.strokeStyle=this.color;linecxt.globalAlpha=this.globalAlpha;linecxt.moveTo(orbA.position.x,orbA.position.y);linecxt.lineTo(orbB.position.x,orbB.position.y);linecxt.stroke();linecxt.closePath()}},phaseColor:function(){var r=Math.floor(Math.sin(this.colorFrequency*this.colorAngle+Math.PI*0/3)*127+128);var g=Math.floor(Math.sin(this.colorFrequency*this.colorAngle+Math.PI*2/3)*127+128);var b=Math.floor(Math.sin(this.colorFrequency*this.colorAngle+Math.PI*4/3)*127+128);this.color='rgba('+r+', '+g+', '+b+', 1)';this.colorAngle+=this.colorAngleIncrement}};return Orbs})();function initialize(){canvasTop=document.querySelector('#canvas-top');canvasBottom=document.querySelector('#canvas-bottom');linecxt=canvasTop.getContext('2d');cxt=canvasBottom.getContext('2d');window.addEventListener('resize',resize,false);resize()}function resize(){width=opts.manualWidth?opts.manualWidth:window.innerWidth;height=opts.manualHeight?opts.manualHeight:window.innerHeight;setup()}function setup(){canvasTop.width=width;canvasTop.height=height;canvasBottom.width=width;canvasBottom.height=height;fillBackground(cxt);orbs=new Orbs(opts.numberOrbs,opts.orbRadius,opts.initialColorAngle,opts.globalAlpha,opts.colorAngleIncrement,opts.colorFrequency);if(animationFrame!==undefined){cancelAnimationFrame(animationFrame)}draw()}function draw(){fillBackground(cxt);orbs.run();animationFrame=requestAnimationFrame(draw)}function fillBackground(context){context.fillStyle=opts.background;context.fillRect(0,0,width,height)}function randBetween(low,high){return Math.random()*(high-low)+low}function randIntBetween(low,high){return Math.floor(Math.random()*(high-low+1)+low)}initialize()})();</script><script src="js/release.js"></script><script src="js/devtools-detect.min.js"></script><script async=""src="js/analysis.js"></script><div style='display:none'><script charset="UTF-8"id="LA_COLLECT"src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"JeRynxXXrD31f66H",ck:"JeRynxXXrD31f66H"})</script></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>永久发布站</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body,
+        html {
+            margin: 0;
+            font-family: "&#24494;&#36719;&#38597;&#40657;", "Microsoft YaHei", "Microsoft YaHei UI", "Segoe UI", Arial, Verdana, Sans-Serif, sans-serif;
+            overflow: hidden;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%
+        }
+
+        body {
+            background: #2a2d3e;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 400
+        }
+
+        canvas {
+            position: absolute
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: fixed;
+        }
+
+        .container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 0;
+            width: 1024px
+        }
+
+        .btn {
+            letter-spacing: .1em;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 45px;
+            position: relative;
+            text-decoration: none;
+            width: 100%;
+            margin: 10px
+        }
+
+        .btn:hover {
+            text-decoration: none
+        }
+
+        .effect01 {
+            width: 35%;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 2em;
+            border: 4px solid #2e098a;
+            box-shadow: 0 0 0 1px #20075f inset;
+            background-color: #553db1;
+            overflow: hidden;
+            position: relative;
+            transition: all .3s ease-in-out
+        }
+
+        .effect01:hover {
+            border: 4px solid #553db1;
+            background-color: #2e098a;
+            box-shadow: 0 0 0 4px #20075f inset
+        }
+
+        .effect01 span {
+            transition: all .2s ease-out;
+            z-index: 2
+        }
+
+        .effect01:hover span {
+            letter-spacing: .13em
+        }
+
+        .effect01:after {
+            background: #fff;
+            border: 0 solid #000;
+            content: "";
+            height: 155px;
+            left: -75px;
+            opacity: .8;
+            position: absolute;
+            top: -50px;
+            -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+            width: 50px;
+            transition: all 1s cubic-bezier(.075, .82, .165, 1);
+            z-index: 1
+        }
+
+        .effect01:hover:after {
+            background: #fff;
+            border: 20px solid #000;
+            opacity: 0;
+            left: 120%;
+            -webkit-transform: rotate(40deg);
+            transform: rotate(40deg)
+        }
+
+        .btn-group {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            display: flex;
+            z-index: 1;
+            justify-content: center;
+            margin-bottom: 4.4em
+        }
+
+        .header .logo {
+            margin-left: -2.4em
+        }
+
+        .header .logo svg {
+            fill: #cbc0f7;
+            height: 8em
+        }
+
+        .header .title {
+            margin-top: -.4em;
+            height: 8em;
+            color: #fff
+        }
+
+        .header .title h1 {
+            text-align: center;
+            letter-spacing: .05em;
+            color: #e1ddf3;
+            margin: 0;
+            font-size: 4.2em;
+            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 60s infinite linear
+        }
+
+        .header .title p {
+            text-align: center;
+            color: #737373;
+            letter-spacing: .5em;
+            font-size: 2em;
+            margin: 0 0 2em;
+            background-image: -webkit-linear-gradient(92deg, #df5527, #df9038);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 60s infinite linear
+        }
+
+        .point {
+            margin-top: 2em;
+            color: #c7c7c7;
+            line-height: 24px;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #604b69;
+            z-index: 1;
+            margin-top: 3em;
+            font-size: .6em
+        }
+
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0)
+            }
+
+            to {
+                -webkit-filter: hue-rotate(-360deg)
+            }
+        }
+
+        .loading .loading-text {
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .loading-text {
+            position: relative;
+        }
+
+        .loading-text::after {
+            content: "";
+            position: absolute;
+            top: 0%;
+            bottom: 0;
+            margin-left: 10px;
+            animation: dot 1s infinite steps(3, start);
+        }
+
+        .speed-url {
+            color: #acacac;
+            font-style: italic;
+            font-size: 12px;
+        }
+
+        .speed-fast .speed-text {
+            color: #11d08a;
+        }
+
+        .speed-check .speed-text {
+            color: #9d9d9d;
+        }
+
+        .speed-fast {}
+
+        .speed-ord .speed-text {
+            color: #ff8000;
+        }
+
+        .speed-ord .dis_speed--btn {
+            border-color: #bd5f00;
+        }
+
+        .speed-fail .speed-text {
+            color: #f37b88;
+        }
+
+        .speed-fail {
+            border-color: #882d37;
+        }
+
+        .speed-fail .speed-unit {
+            display: none;
+        }
+
+        .speed-timeout .speed-text {
+            color: #f37b88;
+        }
+
+        .speed-timeout {
+            border-color: #882d37;
+        }
+
+        .speed-timeout .speed-unit {
+            display: none;
+        }
+
+        @keyframes dot {
+            33.33% {
+                content: ".";
+            }
+
+            66.67% {
+                content: "..";
+            }
+
+            100% {
+                content: "...";
+            }
+        }
+
+        @-webkit-keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000
+            }
+
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000
+            }
+        }
+
+        @-moz-keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000
+            }
+
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000
+            }
+        }
+
+        @-o-keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000
+            }
+
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000
+            }
+        }
+
+        @-ms-keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000
+            }
+
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000
+            }
+        }
+
+        @keyframes glow {
+            0% {
+                border-color: #393;
+                box-shadow: 0 0 5px rgba(0, 255, 0, .2), inset 0 0 5px rgba(0, 255, 0, .1), 0 2px 0 #000
+            }
+
+            100% {
+                border-color: #6f6;
+                box-shadow: 0 0 20px rgba(0, 255, 0, .6), inset 0 0 10px rgba(0, 255, 0, .4), 0 2px 0 #000
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .header .title h1 {
+                font-size: 2.6em;
+            }
+
+            .header .title p {
+                font-size: 2.2em;
+            }
+
+            .effect01 {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .header .title {
+                width: 100%;
+            }
+
+            .header .title h1 {
+                font-size: 1.6em;
+            }
+
+            .header .title p {
+                font-size: 1.2em;
+            }
+
+            .effect01 {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 992px) {}
+    </style>
+    <script type="text/javascript">
+        window.config = {
+            checkTimeOut: 4000,
+            checkFast: 1500,
+            checkNormal: 2000,
+            template: '<a href="//{{url}}" class="btn effect01 speed-{{speed}}" id="btn-{{id}}" target="_blank"><span>&#32447;&#36335;{{name}}<span class="speed-text">[&#27491;&#22312;&#26816;&#27979;&#20013;...]</span></a>',
+            speed: ' &#38142;&#25509;&#27627;&#31186;[{{timer}}<span class="speed-unit">ms</span>]',
+            checkList: ["MDhiay5jb20=","dWNkeS50b3A="],
+        };
+    </script>
+</head>
+
+<body><canvas id="canvas-bottom"></canvas><canvas id="canvas-top"></canvas>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    <h1>小七地址永久发布站</h1>
+                    <p>Ctrl+D加入收藏</p>
+                </div>
+            </div>
+            <div id="siteDataList" class="btn-group"></div>
+            <div class="loading hidden" id="loading">
+                <p class="loading-img"><svg class="lds-default" width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style="background: none;">
+                        <circle cx="75" cy="50" fill="undefined" r="4.75387">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.642s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.642s"></animate>
+                        </circle>
+                        <circle cx="71.651" cy="62.5" fill="undefined" r="4.57184">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.583s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.583s"></animate>
+                        </circle>
+                        <circle cx="62.5" cy="71.651" fill="undefined" r="3.90898">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.525s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.525s"></animate>
+                        </circle>
+                        <circle cx="50" cy="75" fill="undefined" r="3.24613">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.467s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.467s"></animate>
+                        </circle>
+                        <circle cx="37.5" cy="71.651" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.408s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.408s"></animate>
+                        </circle>
+                        <circle cx="28.349" cy="62.5" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.35s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.35s"></animate>
+                        </circle>
+                        <circle cx="25" cy="50" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.292s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.292s"></animate>
+                        </circle>
+                        <circle cx="28.349" cy="37.5" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.233s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.233s"></animate>
+                        </circle>
+                        <circle cx="37.5" cy="28.349" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.175s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.175s"></animate>
+                        </circle>
+                        <circle cx="50" cy="25" fill="undefined" r="3">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.117s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.117s"></animate>
+                        </circle>
+                        <circle cx="62.5" cy="28.349" fill="undefined" r="3.42816">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="-0.058s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="-0.058s"></animate>
+                        </circle>
+                        <circle cx="71.651" cy="37.5" fill="undefined" r="4.09102">
+                            <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="0.7s" repeatCount="indefinite" begin="0s"></animate>
+                            <animate attributeName="fill" values="#ffffff;#ffffff;#ffffff;#ffffff;#ffffff" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="0.7s" begin="0s"></animate>
+                        </circle>
+                    </svg></p>
+                <p class="loading-text">正在加载中</p>
+            </div>
+            <div class="point">
+                <p>友情提示：本站点为发布站，请使用Ctrl+D加入收藏</p>
+                <p>强烈建议收藏本网址防止以后找不到我们失联!</p>
+            </div>
+            <div class="copyright">
+                <p>Copyright © 2022 小七永久发布页地址.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function() {
+            function Vector(x, y, z) {
+                this.x = x || 0;
+                this.y = y || 0;
+                this.z = z || 0;
+            }
+            Vector.prototype = {
+                negative: function() {
+                    return new Vector(-this.x, -this.y, -this.z);
+                },
+                add: function(v) {
+                    if (v instanceof Vector) return new Vector(this.x + v.x, this.y + v.y, this.z + v.z);
+                    else return new Vector(this.x + v, this.y + v, this.z + v);
+                },
+                subtract: function(v) {
+                    if (v instanceof Vector) return new Vector(this.x - v.x, this.y - v.y, this.z - v.z);
+                    else return new Vector(this.x - v, this.y - v, this.z - v);
+                },
+                multiply: function(v) {
+                    if (v instanceof Vector) return new Vector(this.x * v.x, this.y * v.y, this.z * v.z);
+                    else return new Vector(this.x * v, this.y * v, this.z * v);
+                },
+                divide: function(v) {
+                    if (v instanceof Vector) return new Vector(this.x / v.x, this.y / v.y, this.z / v.z);
+                    else return new Vector(this.x / v, this.y / v, this.z / v);
+                },
+                equals: function(v) {
+                    return this.x == v.x && this.y == v.y && this.z == v.z;
+                },
+                dot: function(v) {
+                    return this.x * v.x + this.y * v.y + this.z * v.z;
+                },
+                cross: function(v) {
+                    return new Vector(this.y * v.z - this.z * v.y, this.z * v.x - this.x * v.z, this.x * v.y - this.y * v.x);
+                },
+                length: function() {
+                    return Math.sqrt(this.dot(this));
+                },
+                unit: function() {
+                    return this.divide(this.length());
+                },
+                min: function() {
+                    return Math.min(Math.min(this.x, this.y), this.z);
+                },
+                max: function() {
+                    return Math.max(Math.max(this.x, this.y), this.z);
+                },
+                toAngles: function() {
+                    return {
+                        theta: Math.atan2(this.z, this.x),
+                        phi: Math.asin(this.y / this.length())
+                    };
+                },
+                angleTo: function(a) {
+                    return Math.acos(this.dot(a) / (this.length() * a.length()));
+                },
+                toArray: function(n) {
+                    return [this.x, this.y, this.z].slice(0, n || 3);
+                },
+                clone: function() {
+                    return new Vector(this.x, this.y, this.z);
+                },
+                init: function(x, y, z) {
+                    this.x = x;
+                    this.y = y;
+                    this.z = z;
+                    return this;
+                },
+                noZ: function() {
+                    this.z = 0;
+                    return this;
+                }
+            };
+            Vector.negative = function(a, b) {
+                b.x = -a.x;
+                b.y = -a.y;
+                b.z = -a.z;
+                return b;
+            };
+            Vector.add = function(a, b, c) {
+                if (b instanceof Vector) {
+                    c.x = a.x + b.x;
+                    c.y = a.y + b.y;
+                    c.z = a.z + b.z;
+                } else {
+                    c.x = a.x + b;
+                    c.y = a.y + b;
+                    c.z = a.z + b;
+                }
+                return c;
+            };
+            Vector.subtract = function(a, b, c) {
+                if (b instanceof Vector) {
+                    c.x = a.x - b.x;
+                    c.y = a.y - b.y;
+                    c.z = a.z - b.z;
+                } else {
+                    c.x = a.x - b;
+                    c.y = a.y - b;
+                    c.z = a.z - b;
+                }
+                return c;
+            };
+            Vector.multiply = function(a, b, c) {
+                if (b instanceof Vector) {
+                    c.x = a.x * b.x;
+                    c.y = a.y * b.y;
+                    c.z = a.z * b.z;
+                } else {
+                    c.x = a.x * b;
+                    c.y = a.y * b;
+                    c.z = a.z * b;
+                }
+                return c;
+            };
+            Vector.divide = function(a, b, c) {
+                if (b instanceof Vector) {
+                    c.x = a.x / b.x;
+                    c.y = a.y / b.y;
+                    c.z = a.z / b.z;
+                } else {
+                    c.x = a.x / b;
+                    c.y = a.y / b;
+                    c.z = a.z / b;
+                }
+                return c;
+            };
+            Vector.cross = function(a, b, c) {
+                c.x = a.y * b.z - a.z * b.y;
+                c.y = a.z * b.x - a.x * b.z;
+                c.z = a.x * b.y - a.y * b.x;
+                return c;
+            };
+            Vector.unit = function(a, b) {
+                var length = a.length();
+                b.x = a.x / length;
+                b.y = a.y / length;
+                b.z = a.z / length;
+                return b;
+            };
+            Vector.fromAngles = function(theta, phi) {
+                return new Vector(Math.cos(theta) * Math.cos(phi), Math.sin(phi), Math.sin(theta) * Math.cos(phi));
+            };
+            Vector.randomDirection = function() {
+                return Vector.fromAngles(Math.random() * Math.PI * 2, Math.asin(Math.random() * 2 - 1));
+            };
+            Vector.min = function(a, b) {
+                return new Vector(Math.min(a.x, b.x), Math.min(a.y, b.y), Math.min(a.z, b.z));
+            };
+            Vector.max = function(a, b) {
+                return new Vector(Math.max(a.x, b.x), Math.max(a.y, b.y), Math.max(a.z, b.z));
+            };
+            Vector.lerp = function(a, b, fraction) {
+                return b.subtract(a).multiply(fraction).add(a);
+            };
+            Vector.fromArray = function(a) {
+                return new Vector(a[0], a[1], a[2]);
+            };
+            Vector.angleBetween = function(a, b) {
+                return a.angleTo(b);
+            };
+            window.Vector = Vector;
+        })();
+        (function() {
+            'use strict';
+            var opts = {
+                background: 'black',
+                numberOrbs: 50,
+                maxVelocity: 2.5,
+                orbRadius: 1,
+                minProximity: 100,
+                initialColorAngle: 7,
+                colorFrequency: 0.3,
+                colorAngleIncrement: 0.009,
+                globalAlpha: 0.010,
+                manualWidth: false,
+                manualHeight: false
+            };
+            var canvasTop, linecxt, canvasBottom, cxt, width, height, animationFrame;
+            var orbs;
+            var Orb = (function() {
+                function Orb(radius, color) {
+                    var posX = randBetween(0, width);
+                    var posY = randBetween(0, height);
+                    this.position = new Vector(posX, posY);
+                    var velS = randBetween(0, opts.maxVelocity);
+                    this.velocity = Vector.randomDirection().multiply(velS).noZ();
+                    this.radius = radius;
+                    this.color = color;
+                }
+                Orb.prototype = {
+                    update: function() {
+                        this.position = this.position.add(this.velocity);
+                        if (this.position.x + this.radius >= width || this.position.x - this.radius <= 0) {
+                            this.velocity.x = this.velocity.x * -1;
+                        }
+                        if (this.position.y + this.radius >= height || this.position.y - this.radius <= 0) {
+                            this.velocity.y = this.velocity.y * -1;
+                        }
+                    },
+                    display: function() {
+                        cxt.beginPath();
+                        cxt.fillStyle = this.color;
+                        cxt.ellipse(this.position.x, this.position.y, this.radius, this.radius, 0, 0, 2 * Math.PI, false);
+                        cxt.fill();
+                        cxt.closePath();
+                    },
+                    run: function() {
+                        this.update();
+                        this.display();
+                    }
+                };
+                return Orb;
+            })();
+            var Orbs = (function() {
+                function Orbs(numberOrbs, radius, initialColorAngle, globalAlpha, colorAngleIncrement, colorFrequency) {
+                    this.orbs = [];
+                    this.colorAngle = initialColorAngle;
+                    this.colorAngleIncrement = colorAngleIncrement;
+                    this.globalAlpha = globalAlpha;
+                    this.colorFrequency = colorFrequency;
+                    this.color = null;
+                    for (var i = 0; i < numberOrbs; i++) {
+                        this.orbs.push(new Orb(radius, this.color));
+                    }
+                }
+                Orbs.prototype = {
+                    run: function() {
+                        this.phaseColor();
+                        for (var i = 0; i < this.orbs.length; i++) {
+                            for (var j = i + 1; j < this.orbs.length; j++) {
+                                this.compare(this.orbs[i], this.orbs[j]);
+                            }
+                            this.orbs[i].color = this.color;
+                            this.orbs[i].run();
+                        }
+                    },
+                    compare: function(orbA, orbB) {
+                        var distance = Math.abs(orbA.position.subtract(orbB.position).length());
+                        if (distance <= opts.minProximity) {
+                            linecxt.beginPath();
+                            linecxt.strokeStyle = this.color;
+                            linecxt.globalAlpha = this.globalAlpha;
+                            linecxt.moveTo(orbA.position.x, orbA.position.y);
+                            linecxt.lineTo(orbB.position.x, orbB.position.y);
+                            linecxt.stroke();
+                            linecxt.closePath();
+                        }
+                    },
+                    phaseColor: function() {
+                        var r = Math.floor(Math.sin(this.colorFrequency * this.colorAngle + Math.PI * 0 / 3) * 127 + 128);
+                        var g = Math.floor(Math.sin(this.colorFrequency * this.colorAngle + Math.PI * 2 / 3) * 127 + 128);
+                        var b = Math.floor(Math.sin(this.colorFrequency * this.colorAngle + Math.PI * 4 / 3) * 127 + 128);
+                        this.color = 'rgba(' + r + ', ' + g + ', ' + b + ', 1)';
+                        this.colorAngle += this.colorAngleIncrement;
+                    }
+                };
+                return Orbs;
+            })();
+
+            function initialize() {
+                canvasTop = document.querySelector('#canvas-top');
+                canvasBottom = document.querySelector('#canvas-bottom');
+                linecxt = canvasTop.getContext('2d');
+                cxt = canvasBottom.getContext('2d');
+                window.addEventListener('resize', resize, false);
+                resize();
+            }
+
+            function resize() {
+                width = opts.manualWidth ? opts.manualWidth : window.innerWidth;
+                height = opts.manualHeight ? opts.manualHeight : window.innerHeight;
+                setup();
+            }
+
+            function setup() {
+                canvasTop.width = width;
+                canvasTop.height = height;
+                canvasBottom.width = width;
+                canvasBottom.height = height;
+                fillBackground(cxt);
+                orbs = new Orbs(opts.numberOrbs, opts.orbRadius, opts.initialColorAngle, opts.globalAlpha, opts.colorAngleIncrement, opts.colorFrequency);
+                if (animationFrame !== undefined) {
+                    cancelAnimationFrame(animationFrame);
+                }
+                draw();
+            }
+
+            function draw() {
+                fillBackground(cxt);
+                orbs.run();
+                animationFrame = requestAnimationFrame(draw);
+            }
+
+            function fillBackground(context) {
+                context.fillStyle = opts.background;
+                context.fillRect(0, 0, width, height);
+            }
+
+            function randBetween(low, high) {
+                return Math.random() * (high - low) + low;
+            }
+
+            function randIntBetween(low, high) {
+                return Math.floor(Math.random() * (high - low + 1) + low);
+            }
+            initialize();
+        })();
+    </script>
+    <script src="js/release.js"></script>
+    <script src="js/devtools-detect.min.js"></script>
+    <script async="" src="js/analysis.js"></script>
+	<div style='display:none'><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id: "JeRynxXXrD31f66H",ck: "JeRynxXXrD31f66H"})</script></div>
+</body>
+
+</html>
