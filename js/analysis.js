@@ -11,7 +11,7 @@
     } else if (domainArray.length == 2) {} else {
         return;
     }
-    if (domain == "" || domain == "xiaoqi.top") {
+    if (domain == "" || domain == "seven-737.github.io") {
         return;
     }
     var ajax = new XMLHttpRequest();
